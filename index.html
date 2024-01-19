@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Practice styling</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="px-64">
+    <header class="container">
+      <nav class="flex flex-row justify-between py-5">
+        <div class="hover:cursor-pointer">
+          <img
+            src="./asset/logoPractice.png"
+            alt="logo"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="flex flex-row gap-5 justify-end text-[#23155B]">
+          <div class="w-20 grid content-center">
+            <p class="hover:cursor-pointer hover:text-purple-400">
+              For Project
+            </p>
+          </div>
+          <div
+            class="w-24 grid content-center hover:cursor-pointer hover:text-purple-400"
+          >
+            For Investor
+          </div>
+          <div class="grid content-center">
+            <button
+              class="bg-[#8053FF] rounded-lg text-white w-20 h-12 hover:bg-purple-950"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container pt-5">
+        <div class="grid place-content-center h-[596px]">
+          <div class="flex flex-col gap-3">
+            <div>
+              <h1 class="text-6xl text-center text-[#23155B] font-bold">
+                Vision Capital
+              </h1>
+            </div>
+            <div>
+              <p class="text-[#23155B] text-xl">
+                The right way to fund and incubate your DeFi startup
+              </p>
+            </div>
+            <div class="flex flex-row justify-center gap-2">
+              <button
+                type="submit"
+                class="bg-[#8053FF] rounded-lg hover:bg-purple-950 text-white w-36 h-10 text-sm"
+              >
+                I Need Funding
+              </button>
+              <button
+                type="submit"
+                class="rounded-lg border border-[#8053FF] text-[#8053FF] hover:bg-[#8053FF] hover:text-white w-36 h-10 text-sm"
+              >
+                Become an Investor
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container px-5 pt-5">
+        <div class="grid place-content-center h-[648px]">
+          <div class="flex flex-row gap-20">
+            <div class="max-w-md">
+              <p class="text-6xl text-[#23155B] font-bold">
+                Traditional Fundraising
+                <span class="text-[#8053FF]">Doesn't Work</span> in DeFi
+              </p>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div
+                class="flex flex-row gap-2 px-5 py-5 rounded-lg shadow-lg w-[620px] h-[120px] max-w-sm"
+              >
+                <span class="text-3xl font-bold text-[#8053FF]">01</span>
+                <p class="text-lg text-[#23155B] font-medium">
+                  Without a big budget, it's hard to approach venture investors
+                </p>
+              </div>
+              <div
+                class="flex flex-row gap-2 px-5 py-5 rounded-lg shadow-lg w-[620px] h-[120px] max-w-sm"
+              >
+                <span class="text-3xl font-bold text-[#8053FF]">02</span>
+                <p class="text-lg text-[#23155B] font-medium">
+                  VCs don't care about your DeFi idea <span>-</span> only their
+                  gains
+                </p>
+              </div>
+              <div
+                class="flex flex-row gap-2 px-5 py-5 rounded-lg shadow-lg w-[620px] h-[120px] max-w-sm"
+              >
+                <span class="text-3xl font-bold text-[#8053FF]">03</span>
+                <p class="text-lg text-[#23155B] font-medium">
+                  They force you into selling your tokens at a huge discount…
+                </p>
+              </div>
+              <div
+                class="flex flex-row gap-2 px-5 py-5 rounded-lg shadow-lg w-[620px] h-[120px] max-w-sm"
+              >
+                <span class="text-3xl font-bold text-[#8053FF]">04</span>
+                <p class="text-lg text-[#23155B] font-medium">
+                  ...Then dump them at the first opportunity
+                </p>
+              </div>
+              <div
+                class="flex flex-row gap-2 px-5 py-5 rounded-lg shadow-lg w-[620px] h-[120px] max-w-sm"
+              >
+                <span class="text-3xl font-bold text-[#8053FF]">05</span>
+                <p class="text-lg text-[#23155B] font-medium">
+                  Result: your token collapses. Everyone goes home.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
